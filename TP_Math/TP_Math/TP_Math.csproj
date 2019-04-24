@@ -109,5 +109,8 @@
   <ItemGroup>
     <None Include="Resources\normal_distribution_histogram.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\probability_density_function.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
