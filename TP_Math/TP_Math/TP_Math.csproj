@@ -64,6 +64,8 @@
     <Compile Include="Intérieur.Designer.cs">
       <DependentUpon>Intérieur.cs</DependentUpon>
     </Compile>
+    <Compile Include="NormalDist.cs" />
+    <Compile Include="NormalDistExample.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Supérieur.cs">
@@ -72,6 +74,9 @@
     <Compile Include="Supérieur.Designer.cs">
       <DependentUpon>Supérieur.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Intérieur.resx">
+      <DependentUpon>Intérieur.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
