@@ -63,6 +63,16 @@ namespace TP_Math.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _61449_return_button {
+            get {
+                object obj = ResourceManager.GetObject("61449-return-button", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap normal_distribution_histogram {
             get {
                 object obj = ResourceManager.GetObject("normal_distribution_histogram", resourceCulture);

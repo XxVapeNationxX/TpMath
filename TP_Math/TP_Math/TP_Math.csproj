@@ -112,5 +112,8 @@
   <ItemGroup>
     <None Include="Resources\probability_density_function.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\61449-return-button.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

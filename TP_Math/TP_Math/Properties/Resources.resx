@@ -124,4 +124,7 @@
   <data name="probability_density_function" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\probability_density_function.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="61449-return-button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\61449-return-button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>
