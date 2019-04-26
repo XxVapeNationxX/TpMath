@@ -87,11 +87,6 @@ namespace TP_Math
             ERror_A.Visible = false;
         }
 
-        private void TBX_Reponse_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void BTN_Calculer_Click_1(object sender, EventArgs e)
         {
             bool bon = true;
