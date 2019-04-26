@@ -116,8 +116,8 @@ namespace TP_Math
             {
                 double Rep;
                 Rep = Probabilité.getTableData((double.Parse(TBX_A.Text) - double.Parse(TBX_Moyenne.Text)) / double.Parse(TBX_ET.Text), 2);
-                TBX_Reponse.Text = Rep.ToString();
-                
+                Rep = Rep * 100;
+                TBX_Reponse.Text = Rep.ToString() + " %";            
             }
         }
     }
