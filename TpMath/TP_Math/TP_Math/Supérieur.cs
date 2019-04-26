@@ -37,6 +37,11 @@ namespace TP_Math
             {
                 e.Handled = true;
             }
+            // only allow one decimal point
+            if ((e.KeyChar == '-') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
+            }
         }
 
         private void TBX_ET_KeyPress(object sender, KeyPressEventArgs e)
@@ -49,6 +54,10 @@ namespace TP_Math
 
             // only allow one decimal point
             if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
+            }
+            if ((e.KeyChar == '-') && ((sender as TextBox).Text.IndexOf('.') > -1))
             {
                 e.Handled = true;
             }
