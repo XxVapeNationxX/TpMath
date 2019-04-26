@@ -42,6 +42,7 @@ namespace TP_Math
             {
                 e.Handled = true;
             }
+            Error_Moyenne.Visible = false;
         }
 
         private void TBX_ET_KeyPress(object sender, KeyPressEventArgs e)
@@ -60,6 +61,19 @@ namespace TP_Math
             if ((e.KeyChar == '-') && ((sender as TextBox).Text.IndexOf('.') > -1))
             {
                 e.Handled = true;
+            }
+            Error_Ecart.Visible = false;
+        }
+
+        private void BTN_Calculer_Click(object sender, EventArgs e)
+        {
+            if (TBX_Moyenne.Text.IndexOf('-') >= 0)
+            {
+                Error_Moyenne.Visible = true;
+            }
+            if (TBX_ET.Text.IndexOf('-') >= 0)
+            {
+                Error_Ecart.Visible = true;
             }
         }
     }
