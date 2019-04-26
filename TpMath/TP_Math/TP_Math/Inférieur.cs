@@ -67,11 +67,11 @@ namespace TP_Math
 
         private void BTN_Calculer_Click(object sender, EventArgs e)
         {
-            if (TBX_Moyenne.Text.IndexOf('-') > 0)
+            if (TBX_Moyenne.Text.IndexOf('-') > 0 || TBX_Moyenne.Text.IndexOf('.') == 0)
             {
                 Error_Moyenne.Visible = true;
             }
-            if (TBX_ET.Text.IndexOf('-') > 0)
+            if (TBX_ET.Text.IndexOf('-') > 0 || TBX_ET.Text.IndexOf('.') == 0)
             {
                 Error_Ecart.Visible = true;
             }
