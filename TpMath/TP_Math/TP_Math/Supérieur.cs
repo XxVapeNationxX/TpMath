@@ -107,12 +107,20 @@ namespace TP_Math
                 bon = false;
             }
 
-            if (bon == true) 
+            if (bon == true)
             {
                 double Rep;
-                Rep = Probabilité.getTableData((double.Parse(TBX_A.Text) - double.Parse(TBX_Moyenne.Text)) / double.Parse(TBX_ET.Text), 2);
-                Rep = Rep * 100;
-                TBX_Reponse.Text = Rep.ToString() + " %";            
+                Rep = Probabilité.getTableData((double.Parse(TBX_A.Text) - double.Parse(TBX_Moyenne.Text)) / double.Parse(TBX_ET.Text));
+                if (Rep == 101)
+                {
+                    MessageBox.Show("Opération impossible, " +
+                        "veuillez réviser les variables utiliser!");
+                }
+                else
+                {
+                    Rep = Rep * 100;
+                    TBX_Reponse.Text = Rep.ToString() + " %";
+                }
             }
         }
     }

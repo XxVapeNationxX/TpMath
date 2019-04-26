@@ -67,17 +67,36 @@ namespace TP_Math
 
         private void BTN_Calculer_Click(object sender, EventArgs e)
         {
+            bool bon = true;
             if (TBX_Moyenne.Text.IndexOf('-') > 0 || TBX_Moyenne.Text.IndexOf('.') == 0 || string.IsNullOrWhiteSpace(TBX_Moyenne.Text))
             {
                 Error_Moyenne.Visible = true;
+                bon = false;
             }
             if (TBX_ET.Text.IndexOf('-') > 0 || TBX_ET.Text.IndexOf('.') == 0 || string.IsNullOrWhiteSpace(TBX_ET.Text))
             {
                 Error_Ecart.Visible = true;
+                bon = false;
             }
             if (textBox1.Text.IndexOf('-') > 0 || textBox1.Text.IndexOf('.') == 0 || string.IsNullOrWhiteSpace(textBox1.Text))
             {
                 ERror_A.Visible = true;
+                bon = false;
+            }
+            if (bon == true)
+            {
+                double Rep;
+                Rep = Probabilité.getTableData((double.Parse(textBox1.Text) - double.Parse(TBX_Moyenne.Text)) / double.Parse(TBX_ET.Text));
+                if (Rep == 101)
+                {
+                    MessageBox.Show("Opération impossible, " +
+                        "veuillez réviser les variables utiliser!");
+                }
+                else
+                {
+                    Rep = Rep * 100;
+                    TBX_Reponse.Text = Rep.ToString() + " %";
+                }
             }
         }
 
