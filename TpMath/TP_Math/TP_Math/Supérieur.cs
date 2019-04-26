@@ -109,6 +109,13 @@ namespace TP_Math
             {
                 ERror_A.Visible = true;
             }
+            else
+            {
+                double ET = Double.Parse(TBX_ET.Text);
+                double Mo = Double.Parse(TBX_Moyenne.Text);
+
+                double Cz = Mo / ET;
+            }
         }
     }
 }
