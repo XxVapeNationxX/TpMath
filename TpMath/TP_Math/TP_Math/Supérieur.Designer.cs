@@ -106,6 +106,7 @@
             this.TBX_Reponse.Name = "TBX_Reponse";
             this.TBX_Reponse.Size = new System.Drawing.Size(149, 24);
             this.TBX_Reponse.TabIndex = 36;
+            this.TBX_Reponse.TextChanged += new System.EventHandler(this.TBX_Reponse_TextChanged);
             // 
             // label3
             // 
@@ -150,6 +151,7 @@
             this.BTN_Calculer.TabIndex = 32;
             this.BTN_Calculer.Text = "Calculer";
             this.BTN_Calculer.UseVisualStyleBackColor = true;
+            this.BTN_Calculer.Click += new System.EventHandler(this.BTN_Calculer_Click_1);
             // 
             // pictureBox1
             // 

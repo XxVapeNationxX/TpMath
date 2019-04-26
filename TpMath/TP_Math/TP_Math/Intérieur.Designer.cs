@@ -30,7 +30,6 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.TBX_Moyenne = new System.Windows.Forms.TextBox();
             this.TBX_ET = new System.Windows.Forms.TextBox();
             this.BTN_Calculer = new System.Windows.Forms.Button();
             this.Error_Ecart = new System.Windows.Forms.Label();
@@ -40,12 +39,13 @@
             this.label4 = new System.Windows.Forms.Label();
             this.BTN_Return = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.ERror_A = new System.Windows.Forms.Label();
             this.TBX_B = new System.Windows.Forms.TextBox();
             this.Error_B = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.TBX_Moyenne = new System.Windows.Forms.TextBox();
+            this.TBX_A = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.BTN_Return)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -69,15 +69,6 @@
             this.label2.Size = new System.Drawing.Size(89, 22);
             this.label2.TabIndex = 1;
             this.label2.Text = "Écart type:";
-            // 
-            // TBX_Moyenne
-            // 
-            this.TBX_Moyenne.Font = new System.Drawing.Font("Palatino Linotype", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TBX_Moyenne.Location = new System.Drawing.Point(102, 19);
-            this.TBX_Moyenne.Name = "TBX_Moyenne";
-            this.TBX_Moyenne.Size = new System.Drawing.Size(149, 24);
-            this.TBX_Moyenne.TabIndex = 2;
-            this.TBX_Moyenne.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TBX_Moyenne_KeyPress);
             // 
             // TBX_ET
             // 
@@ -173,15 +164,6 @@
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Palatino Linotype", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(102, 115);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(149, 24);
-            this.textBox1.TabIndex = 12;
-            this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
-            // 
             // ERror_A
             // 
             this.ERror_A.AutoSize = true;
@@ -235,17 +217,35 @@
             this.label8.TabIndex = 17;
             this.label8.Text = "B:";
             // 
+            // TBX_Moyenne
+            // 
+            this.TBX_Moyenne.Font = new System.Drawing.Font("Palatino Linotype", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TBX_Moyenne.Location = new System.Drawing.Point(102, 19);
+            this.TBX_Moyenne.Name = "TBX_Moyenne";
+            this.TBX_Moyenne.Size = new System.Drawing.Size(149, 24);
+            this.TBX_Moyenne.TabIndex = 18;
+            // 
+            // TBX_A
+            // 
+            this.TBX_A.Font = new System.Drawing.Font("Palatino Linotype", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TBX_A.Location = new System.Drawing.Point(102, 115);
+            this.TBX_A.Name = "TBX_A";
+            this.TBX_A.Size = new System.Drawing.Size(149, 24);
+            this.TBX_A.TabIndex = 19;
+            this.TBX_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TBX_A_KeyPress);
+            // 
             // Intérieur
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(502, 345);
+            this.Controls.Add(this.TBX_A);
+            this.Controls.Add(this.TBX_Moyenne);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.Error_B);
             this.Controls.Add(this.TBX_B);
             this.Controls.Add(this.ERror_A);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.BTN_Return);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.TBX_Reponse);
@@ -255,7 +255,6 @@
             this.Controls.Add(this.BTN_Calculer);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.TBX_ET);
-            this.Controls.Add(this.TBX_Moyenne);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Intérieur";
@@ -271,7 +270,7 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox TBX_Moyenne;
+        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox TBX_ET;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button BTN_Calculer;
@@ -281,11 +280,12 @@
         private System.Windows.Forms.TextBox TBX_Reponse;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox BTN_Return;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label ERror_A;
         private System.Windows.Forms.TextBox TBX_B;
         private System.Windows.Forms.Label Error_B;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox TBX_Moyenne;
+        private System.Windows.Forms.TextBox TBX_A;
     }
 }

@@ -67,15 +67,15 @@ namespace TP_Math
 
         private void BTN_Calculer_Click(object sender, EventArgs e)
         {
-            if (TBX_Moyenne.Text.IndexOf('-') > 0 || TBX_Moyenne.Text.IndexOf('.') == 0)
+            if (TBX_Moyenne.Text.IndexOf('-') > 0 || TBX_Moyenne.Text.IndexOf('.') == 0 || string.IsNullOrWhiteSpace(TBX_Moyenne.Text))
             {
                 Error_Moyenne.Visible = true;
             }
-            if (TBX_ET.Text.IndexOf('-') > 0 || TBX_ET.Text.IndexOf('.') == 0)
+            if (TBX_ET.Text.IndexOf('-') > 0 || TBX_ET.Text.IndexOf('.') == 0 || string.IsNullOrWhiteSpace(TBX_ET.Text))
             {
                 Error_Ecart.Visible = true;
             }
-            if (textBox1.Text.IndexOf('-') > 0 || textBox1.Text.IndexOf('.') == 0)
+            if (textBox1.Text.IndexOf('-') > 0 || textBox1.Text.IndexOf('.') == 0 || string.IsNullOrWhiteSpace(textBox1.Text))
             {
                 ERror_A.Visible = true;
             }
