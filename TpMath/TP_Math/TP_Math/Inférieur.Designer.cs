@@ -106,6 +106,7 @@
             this.BTN_Calculer.TabIndex = 17;
             this.BTN_Calculer.Text = "Calculer";
             this.BTN_Calculer.UseVisualStyleBackColor = true;
+            this.BTN_Calculer.Click += new System.EventHandler(this.BTN_Calculer_Click);
             // 
             // TBX_ET
             // 
