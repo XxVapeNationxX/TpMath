@@ -64,8 +64,7 @@
     <Compile Include="Intérieur.Designer.cs">
       <DependentUpon>Intérieur.cs</DependentUpon>
     </Compile>
-    <Compile Include="NormalDist.cs" />
-    <Compile Include="NormalDistExample.cs" />
+    <Compile Include="Probabilité.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Supérieur.cs">
