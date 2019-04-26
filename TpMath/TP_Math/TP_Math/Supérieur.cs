@@ -97,19 +97,25 @@ namespace TP_Math
 
         private void BTN_Calculer_Click_1(object sender, EventArgs e)
         {
+            bool bon = true;
+
             if (TBX_Moyenne.Text.IndexOf('-') > 0 || TBX_Moyenne.Text.IndexOf('.') == 0 || string.IsNullOrWhiteSpace(TBX_Moyenne.Text))
             {
                 Error_Moyenne.Visible = true;
+                bon = false;
             }
             if (TBX_ET.Text.IndexOf('-') > 0 || TBX_ET.Text.IndexOf('.') == 0 || string.IsNullOrWhiteSpace(TBX_ET.Text))
             {
                 Error_Ecart.Visible = true;
+                bon = false;
             }
             if (textBox1.Text.IndexOf('-') > 0 || textBox1.Text.IndexOf('.') == 0 || string.IsNullOrWhiteSpace(textBox1.Text))
             {
                 ERror_A.Visible = true;
+                bon = false;
             }
-            else
+
+            if (bon = true) ;
             {
                 double ET = Double.Parse(TBX_ET.Text);
                 double Mo = Double.Parse(TBX_Moyenne.Text);
