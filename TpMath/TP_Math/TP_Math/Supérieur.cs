@@ -112,10 +112,10 @@ namespace TP_Math
                 bon = false;
             }
 
-            if (bon == true) ;
+            if (bon == true) 
             {
                 double Rep;
-                Rep = Probabilité.getTableData((double.Parse(TBX_A.Text) - double.Parse(TBX_Moyenne.Text)) - double.Parse(TBX_ET.Text), 2);
+                Rep = Probabilité.getTableData((double.Parse(TBX_A.Text) - double.Parse(TBX_Moyenne.Text)) / double.Parse(TBX_ET.Text), 2);
                 TBX_Reponse.Text = Rep.ToString();
                 
             }

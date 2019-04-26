@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\TpMath",
+    "\\TpMath\\TP_Math",
+    "\\TpMath\\TP_Math\\TP_Math"
   ],
-  "SelectedNode": "\\.gitignore",
+  "SelectedNode": "\\TpMath\\TP_Math\\TP_Math.sln",
   "PreviewInSolutionExplorer": false
 }
