@@ -51,11 +51,17 @@ namespace TP_Math
             {
                 double Rep, Rep2, RepTotal;
                 Rep = Probabilité.getTableData((double.Parse(TBX_A.Text) - double.Parse(TBX_Moyenne.Text)) / double.Parse(TBX_ET.Text));
-                Rep = Rep * 100;
                 Rep2 = Probabilité.getTableData((double.Parse(TBX_B.Text) - double.Parse(TBX_Moyenne.Text)) / double.Parse(TBX_ET.Text));
-                Rep2 = Rep2 * 100;
-                RepTotal = Rep + Rep2;
-                TBX_Reponse.Text = RepTotal.ToString() + " %";
+                if(Rep == 101 || Rep2 == 101)
+                {
+                    MessageBox.Show("Opération impossible, " +
+                        "veuillez réviser les variables utiliser!");
+                }
+                else
+                {
+                    RepTotal = Rep + Rep2 * 100;
+                    TBX_Reponse.Text = RepTotal.ToString() + " %";
+                }
             }
         }
 

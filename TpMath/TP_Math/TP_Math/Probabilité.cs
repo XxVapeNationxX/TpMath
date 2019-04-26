@@ -36,6 +36,10 @@ namespace TP_Math
             string Nb_String = "";
 
             Nb *= 100;
+            if(Nb > 100)
+            {
+                return 101;
+            }
             Nb_String = (Nb).ToString();
             for (int i = 9; i >= 0; i--) // -- Ici on sépare le chiffre pour trouver la position dans la table
             {
