@@ -12,6 +12,7 @@ namespace TP_Math
 {
     public partial class Supérieur : Form
     {
+        
         public Supérieur()
         {
             InitializeComponent();
@@ -27,7 +28,7 @@ namespace TP_Math
         private void TBX_Moyenne_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) &&
-       (e.KeyChar != '.') && (e.KeyChar != '-'))
+        (e.KeyChar != '.') && (e.KeyChar != '-'))
             {
                 e.Handled = true;
             }
@@ -65,10 +66,6 @@ namespace TP_Math
             Error_Ecart.Visible = false;
         }
 
-        private void BTN_Calculer_Click(object sender, EventArgs e)
-        {
-          
-        }
 
         private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -109,18 +106,18 @@ namespace TP_Math
                 Error_Ecart.Visible = true;
                 bon = false;
             }
-            if (textBox1.Text.IndexOf('-') > 0 || textBox1.Text.IndexOf('.') == 0 || string.IsNullOrWhiteSpace(textBox1.Text))
+            if (TBX_A.Text.IndexOf('-') > 0 || TBX_A.Text.IndexOf('.') == 0 || string.IsNullOrWhiteSpace(TBX_A.Text))
             {
                 ERror_A.Visible = true;
                 bon = false;
             }
 
-            if (bon = true) ;
+            if (bon == true) ;
             {
-                double ET = Double.Parse(TBX_ET.Text);
-                double Mo = Double.Parse(TBX_Moyenne.Text);
-
-                double Cz = Mo / ET;
+                double Rep;
+                Rep = Probabilité.getTableData((double.Parse(TBX_A.Text) - double.Parse(TBX_Moyenne.Text)) - double.Parse(TBX_ET.Text), 2);
+                TBX_Reponse.Text = Rep.ToString();
+                
             }
         }
     }

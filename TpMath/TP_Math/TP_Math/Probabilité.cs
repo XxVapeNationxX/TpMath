@@ -21,40 +21,35 @@ namespace TP_Math
         {0.0359, 0.0753, 0.1141, 0.1517, 0.1879, 0.2224, 0.2549, 0.2852, 0.3133, 0.3389, 0.3621, 0.3830, 0.4015, 0.4177, 0.4319, 0.4441, 0.4545, 0.4633, 0.4706, 0.4767, 0.4817, 0.4857, 0.4890, 0.4916, 0.4936, 0.4952, 0.4964, 0.4974, 0.4981, 0.4986, 0.4990, 0.4993, 0.4995, 0.4997, 0.4998, 0.4998, 0.4999, 0.4999, 0.4999, 0.5000, 0.5000}
         };
 
-        private double Écartype_, Moyenne_, ValeurA_, ValeurB_, CodeZ_, CodeZ2_;
-        private string[] TableauNormal;
+        //private double Écartype_, Moyenne_, ValeurA_, ValeurB_, CodeZ_, CodeZ2_;
+        //private string[] TableauNormal;
 
-        Probabilité(double ValeurA, double Moyenne, double ÉcartType)
+        //Probabilité(double ValeurA, double Moyenne, double ÉcartType)
+        //{
+        //    Écartype_ = ÉcartType;
+        //    Moyenne_ = Moyenne;
+        //    ValeurA_ = ValeurA;
+        //    CodeZ_ = CalculerZ(ValeurA_);
+        //}
+
+        //Probabilité(double ValeurA, double ValeurB, double Moyenne, double ÉcartType)
+        //{
+        //    Écartype_ = ÉcartType;
+        //    Moyenne_ = Moyenne;
+        //    ValeurA_ = ValeurA;
+        //    ValeurB_ = ValeurB;
+        //    CodeZ_ = CalculerZ(ValeurA_);
+        //    CodeZ2_ = CalculerZ(ValeurB_);
+        //    InitierTab();
+        //}
+
+        private double CalculerZ(double Valeur,double Moyenne_,double Ecartype_)
         {
-            Écartype_ = ÉcartType;
-            Moyenne_ = Moyenne;
-            ValeurA_ = ValeurA;
-            CodeZ_ = CalculerZ(ValeurA_);
-            InitierTab();
+            return (Valeur - Moyenne_) / Ecartype_;
         }
 
-        Probabilité(double ValeurA, double ValeurB, double Moyenne, double ÉcartType)
-        {
-            Écartype_ = ÉcartType;
-            Moyenne_ = Moyenne;
-            ValeurA_ = ValeurA;
-            ValeurB_ = ValeurB;
-            CodeZ_ = CalculerZ(ValeurA_);
-            CodeZ2_ = CalculerZ(ValeurB_);
-            InitierTab();
-        }
 
-        private double CalculerZ(double Valeur)
-        {
-            return (Valeur - Moyenne_) / Écartype_;
-        }
-
-        private void InitierTab()
-        {
-
-        }
-
-        private double getTableData(double Nb, int Tester = 0)
+         public static double getTableData(double Nb, int Tester = 0)
         {
             // -- CODE POUR ALLER CHERCHER DANS LA TABLE AVEC LA COTE Z
             bool Negative = false;
@@ -66,6 +61,7 @@ namespace TP_Math
             int Line = 0;
             int Column = 0;
             string Nb_String = "";
+
             Nb *= 100;
             Nb_String = (Nb).ToString();
             for (int i = 9; i >= 0; i--) // -- Ici on sépare le chiffre pour trouver la position dans la table
