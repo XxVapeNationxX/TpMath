@@ -114,6 +114,7 @@
             this.TBX_ET.Name = "TBX_ET";
             this.TBX_ET.Size = new System.Drawing.Size(149, 24);
             this.TBX_ET.TabIndex = 15;
+            this.TBX_ET.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TBX_ET_KeyPress);
             // 
             // TBX_Moyenne
             // 
@@ -122,6 +123,7 @@
             this.TBX_Moyenne.Name = "TBX_Moyenne";
             this.TBX_Moyenne.Size = new System.Drawing.Size(149, 24);
             this.TBX_Moyenne.TabIndex = 14;
+            this.TBX_Moyenne.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TBX_Moyenne_KeyPress);
             // 
             // label2
             // 
@@ -152,6 +154,7 @@
             this.BTN_Return.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.BTN_Return.TabIndex = 23;
             this.BTN_Return.TabStop = false;
+            this.BTN_Return.Click += new System.EventHandler(this.BTN_Return_Click);
             // 
             // pictureBox1
             // 

@@ -71,6 +71,7 @@
             this.TBX_Moyenne.Name = "TBX_Moyenne";
             this.TBX_Moyenne.Size = new System.Drawing.Size(149, 24);
             this.TBX_Moyenne.TabIndex = 2;
+            this.TBX_Moyenne.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TBX_Moyenne_KeyPress);
             // 
             // TBX_ET
             // 
@@ -79,6 +80,7 @@
             this.TBX_ET.Name = "TBX_ET";
             this.TBX_ET.Size = new System.Drawing.Size(149, 24);
             this.TBX_ET.TabIndex = 3;
+            this.TBX_ET.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TBX_ET_KeyPress);
             // 
             // BTN_Calculer
             // 
@@ -89,6 +91,7 @@
             this.BTN_Calculer.TabIndex = 5;
             this.BTN_Calculer.Text = "Calculer";
             this.BTN_Calculer.UseVisualStyleBackColor = true;
+            this.BTN_Calculer.Click += new System.EventHandler(this.BTN_Calculer_Click);
             // 
             // Error_Ecart
             // 
@@ -142,7 +145,6 @@
             this.label4.Size = new System.Drawing.Size(218, 67);
             this.label4.TabIndex = 10;
             this.label4.Text = "Ce programme calcule la probabilité avec les valeurs exactes.";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // BTN_Return
             // 
