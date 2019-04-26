@@ -75,6 +75,30 @@ namespace TP_Math
             {
                 Error_Ecart.Visible = true;
             }
+            if (textBox1.Text.IndexOf('-') > 0 || textBox1.Text.IndexOf('.') == 0)
+            {
+                ERror_A.Visible = true;
+            }
+        }
+
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) &&
+      (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+
+            // only allow one decimal point
+            if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
+            }
+            if ((e.KeyChar == '-') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
+            }
+            ERror_A.Visible = false;
         }
     }
 }

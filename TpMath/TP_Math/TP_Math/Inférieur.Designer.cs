@@ -41,7 +41,7 @@
             this.BTN_Return = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
+            this.ERror_A = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.BTN_Return)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -177,18 +177,19 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(149, 24);
             this.textBox1.TabIndex = 24;
+            this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
             // 
-            // label5
+            // ERror_A
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Palatino Linotype", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.Red;
-            this.label5.Location = new System.Drawing.Point(102, 133);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(110, 17);
-            this.label5.TabIndex = 25;
-            this.label5.Text = "Champ non valide";
-            this.label5.Visible = false;
+            this.ERror_A.AutoSize = true;
+            this.ERror_A.Font = new System.Drawing.Font("Palatino Linotype", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ERror_A.ForeColor = System.Drawing.Color.Red;
+            this.ERror_A.Location = new System.Drawing.Point(102, 133);
+            this.ERror_A.Name = "ERror_A";
+            this.ERror_A.Size = new System.Drawing.Size(110, 17);
+            this.ERror_A.TabIndex = 25;
+            this.ERror_A.Text = "Champ non valide";
+            this.ERror_A.Visible = false;
             // 
             // label6
             // 
@@ -206,7 +207,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(502, 274);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.ERror_A);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.BTN_Return);
             this.Controls.Add(this.label4);
@@ -244,7 +245,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label ERror_A;
         private System.Windows.Forms.Label label6;
     }
 }
