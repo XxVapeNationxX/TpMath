@@ -61,3 +61,16 @@ d:\Users\201773523\Source\Repos\TpMath\TpMath\TP_Math\TP_Math\obj\Debug\TP_Math.
 d:\Users\201773523\Source\Repos\TpMath\TpMath\TP_Math\TP_Math\obj\Debug\TP_Math.csproj.CoreCompileInputs.cache
 d:\Users\201773523\Source\Repos\TpMath\TpMath\TP_Math\TP_Math\obj\Debug\TP_Math.exe
 d:\Users\201773523\Source\Repos\TpMath\TpMath\TP_Math\TP_Math\obj\Debug\TP_Math.pdb
+d:\Users\201773523\Source\Repos\TpMath2\TpMath\TP_Math\TP_Math\bin\Debug\TP_Math.exe.config
+d:\Users\201773523\Source\Repos\TpMath2\TpMath\TP_Math\TP_Math\bin\Debug\TP_Math.exe
+d:\Users\201773523\Source\Repos\TpMath2\TpMath\TP_Math\TP_Math\bin\Debug\TP_Math.pdb
+d:\Users\201773523\Source\Repos\TpMath2\TpMath\TP_Math\TP_Math\obj\Debug\TP_Math.csprojAssemblyReference.cache
+d:\Users\201773523\Source\Repos\TpMath2\TpMath\TP_Math\TP_Math\obj\Debug\TP_Math.Inférieur.resources
+d:\Users\201773523\Source\Repos\TpMath2\TpMath\TP_Math\TP_Math\obj\Debug\TP_Math.Intérieur.resources
+d:\Users\201773523\Source\Repos\TpMath2\TpMath\TP_Math\TP_Math\obj\Debug\TP_Math.Menu.resources
+d:\Users\201773523\Source\Repos\TpMath2\TpMath\TP_Math\TP_Math\obj\Debug\TP_Math.Properties.Resources.resources
+d:\Users\201773523\Source\Repos\TpMath2\TpMath\TP_Math\TP_Math\obj\Debug\TP_Math.Supérieur.resources
+d:\Users\201773523\Source\Repos\TpMath2\TpMath\TP_Math\TP_Math\obj\Debug\TP_Math.csproj.GenerateResource.cache
+d:\Users\201773523\Source\Repos\TpMath2\TpMath\TP_Math\TP_Math\obj\Debug\TP_Math.csproj.CoreCompileInputs.cache
+d:\Users\201773523\Source\Repos\TpMath2\TpMath\TP_Math\TP_Math\obj\Debug\TP_Math.exe
+d:\Users\201773523\Source\Repos\TpMath2\TpMath\TP_Math\TP_Math\obj\Debug\TP_Math.pdb
