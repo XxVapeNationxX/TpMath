@@ -28,31 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.BTN_Return = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.TBX_Reponse = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.Error_Moyenne = new System.Windows.Forms.Label();
             this.Error_Ecart = new System.Windows.Forms.Label();
             this.BTN_Calculer = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.TBX_ET = new System.Windows.Forms.TextBox();
             this.TBX_Moyenne = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.BTN_Return = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.BTN_Return)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // BTN_Return
-            // 
-            this.BTN_Return.Image = global::TP_Math.Properties.Resources._61449_return_button;
-            this.BTN_Return.Location = new System.Drawing.Point(11, 188);
-            this.BTN_Return.Name = "BTN_Return";
-            this.BTN_Return.Size = new System.Drawing.Size(26, 23);
-            this.BTN_Return.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.BTN_Return.TabIndex = 23;
-            this.BTN_Return.TabStop = false;
             // 
             // label4
             // 
@@ -117,16 +107,6 @@
             this.BTN_Calculer.Text = "Calculer";
             this.BTN_Calculer.UseVisualStyleBackColor = true;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::TP_Math.Properties.Resources.probability_density_function;
-            this.pictureBox1.Location = new System.Drawing.Point(279, 9);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(214, 130);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 16;
-            this.pictureBox1.TabStop = false;
-            // 
             // TBX_ET
             // 
             this.TBX_ET.Font = new System.Drawing.Font("Palatino Linotype", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -162,6 +142,26 @@
             this.label1.Size = new System.Drawing.Size(84, 22);
             this.label1.TabIndex = 12;
             this.label1.Text = "Moyenne:";
+            // 
+            // BTN_Return
+            // 
+            this.BTN_Return.Image = global::TP_Math.Properties.Resources._61449_return_button;
+            this.BTN_Return.Location = new System.Drawing.Point(11, 188);
+            this.BTN_Return.Name = "BTN_Return";
+            this.BTN_Return.Size = new System.Drawing.Size(26, 23);
+            this.BTN_Return.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.BTN_Return.TabIndex = 23;
+            this.BTN_Return.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::TP_Math.Properties.Resources.fig_ch09_07_01N;
+            this.pictureBox1.Location = new System.Drawing.Point(279, 9);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(214, 130);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 16;
+            this.pictureBox1.TabStop = false;
             // 
             // Supérieur
             // 

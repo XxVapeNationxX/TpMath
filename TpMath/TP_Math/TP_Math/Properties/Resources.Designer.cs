@@ -73,6 +73,26 @@ namespace TP_Math.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap fig_ch09_07_01N {
+            get {
+                object obj = ResourceManager.GetObject("fig-ch09_07_01N", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap juBDI {
+            get {
+                object obj = ResourceManager.GetObject("juBDI", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap normal_distribution_histogram {
             get {
                 object obj = ResourceManager.GetObject("normal_distribution_histogram", resourceCulture);

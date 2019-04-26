@@ -118,5 +118,11 @@
   <ItemGroup>
     <None Include="Resources\61449-return-button.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\juBDI.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fig-ch09_07_01N.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
