@@ -74,6 +74,9 @@
     <Compile Include="Supérieur.Designer.cs">
       <DependentUpon>Supérieur.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Inférieur.resx">
+      <DependentUpon>Inférieur.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Intérieur.resx">
       <DependentUpon>Intérieur.cs</DependentUpon>
     </EmbeddedResource>
