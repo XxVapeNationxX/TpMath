@@ -43,8 +43,10 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.ERror_A = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.DGV_Table = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.BTN_Return)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DGV_Table)).BeginInit();
             this.SuspendLayout();
             // 
             // label4
@@ -201,11 +203,20 @@
             this.label6.TabIndex = 26;
             this.label6.Text = "A:";
             // 
+            // DGV_Table
+            // 
+            this.DGV_Table.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DGV_Table.Location = new System.Drawing.Point(34, 153);
+            this.DGV_Table.Name = "DGV_Table";
+            this.DGV_Table.Size = new System.Drawing.Size(10, 10);
+            this.DGV_Table.TabIndex = 27;
+            // 
             // Inférieur
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(502, 274);
+            this.Controls.Add(this.DGV_Table);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.ERror_A);
             this.Controls.Add(this.textBox1);
@@ -225,6 +236,7 @@
             this.Text = "Inférieur";
             ((System.ComponentModel.ISupportInitialize)(this.BTN_Return)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DGV_Table)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -247,5 +259,6 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label ERror_A;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.DataGridView DGV_Table;
     }
 }

@@ -46,8 +46,10 @@
             this.label8 = new System.Windows.Forms.Label();
             this.TBX_Moyenne = new System.Windows.Forms.TextBox();
             this.TBX_A = new System.Windows.Forms.TextBox();
+            this.DGV_Table = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.BTN_Return)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DGV_Table)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -235,11 +237,20 @@
             this.TBX_A.TabIndex = 19;
             this.TBX_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TBX_A_KeyPress);
             // 
+            // DGV_Table
+            // 
+            this.DGV_Table.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DGV_Table.Location = new System.Drawing.Point(33, 195);
+            this.DGV_Table.Name = "DGV_Table";
+            this.DGV_Table.Size = new System.Drawing.Size(10, 10);
+            this.DGV_Table.TabIndex = 20;
+            // 
             // Intérieur
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(502, 345);
+            this.Controls.Add(this.DGV_Table);
             this.Controls.Add(this.TBX_A);
             this.Controls.Add(this.TBX_Moyenne);
             this.Controls.Add(this.label8);
@@ -262,6 +273,7 @@
             this.Text = "Interieur";
             ((System.ComponentModel.ISupportInitialize)(this.BTN_Return)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DGV_Table)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -288,5 +300,6 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox TBX_Moyenne;
         private System.Windows.Forms.TextBox TBX_A;
+        private System.Windows.Forms.DataGridView DGV_Table;
     }
 }
