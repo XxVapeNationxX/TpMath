@@ -240,10 +240,12 @@
             // DGV_Table
             // 
             this.DGV_Table.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DGV_Table.ColumnHeadersVisible = false;
             this.DGV_Table.Location = new System.Drawing.Point(33, 195);
             this.DGV_Table.Name = "DGV_Table";
             this.DGV_Table.Size = new System.Drawing.Size(10, 10);
-            this.DGV_Table.TabIndex = 20;
+            this.DGV_Table.TabIndex = 45453;
+            this.DGV_Table.Visible = false;
             // 
             // Intérieur
             // 
@@ -271,6 +273,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Intérieur";
             this.Text = "Interieur";
+            this.Load += new System.EventHandler(this.Intérieur_Load);
             ((System.ComponentModel.ISupportInitialize)(this.BTN_Return)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DGV_Table)).EndInit();
