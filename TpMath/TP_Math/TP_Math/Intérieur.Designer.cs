@@ -47,6 +47,7 @@
             this.TBX_Moyenne = new System.Windows.Forms.TextBox();
             this.TBX_A = new System.Windows.Forms.TextBox();
             this.DGV_Table = new System.Windows.Forms.DataGridView();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.BTN_Return)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DGV_Table)).BeginInit();
@@ -143,7 +144,8 @@
             this.label4.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.label4.Size = new System.Drawing.Size(218, 67);
             this.label4.TabIndex = 10;
-            this.label4.Text = "Ce programme calcule la probabilité avec les valeurs exactes.";
+            this.label4.Text = "Ce programme utilise le tableau de la loi normal";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // BTN_Return
             // 
@@ -247,11 +249,23 @@
             this.DGV_Table.TabIndex = 45453;
             this.DGV_Table.Visible = false;
             // 
+            // label5
+            // 
+            this.label5.Font = new System.Drawing.Font("Palatino Linotype", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Red;
+            this.label5.Location = new System.Drawing.Point(56, 310);
+            this.label5.Name = "label5";
+            this.label5.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label5.Size = new System.Drawing.Size(445, 23);
+            this.label5.TabIndex = 45454;
+            this.label5.Text = "Important: Posséder le fichier excel de la table pour l\'éxécution du programme";
+            // 
             // Intérieur
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(502, 345);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.DGV_Table);
             this.Controls.Add(this.TBX_A);
             this.Controls.Add(this.TBX_Moyenne);
@@ -304,5 +318,6 @@
         private System.Windows.Forms.TextBox TBX_Moyenne;
         private System.Windows.Forms.TextBox TBX_A;
         private System.Windows.Forms.DataGridView DGV_Table;
+        private System.Windows.Forms.Label label5;
     }
 }

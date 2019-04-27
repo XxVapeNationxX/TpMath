@@ -44,6 +44,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.DGV_Table = new System.Windows.Forms.DataGridView();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.BTN_Return)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DGV_Table)).BeginInit();
@@ -92,13 +93,14 @@
             // 
             // label4
             // 
-            this.label4.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(276, 197);
+            this.label4.Font = new System.Drawing.Font("Palatino Linotype", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Red;
+            this.label4.Location = new System.Drawing.Point(49, 241);
             this.label4.Name = "label4";
             this.label4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label4.Size = new System.Drawing.Size(218, 67);
+            this.label4.Size = new System.Drawing.Size(445, 23);
             this.label4.TabIndex = 37;
-            this.label4.Text = "Ce programme calcule la probabilité avec les valeurs exactes.";
+            this.label4.Text = "Important: Posséder le fichier excel de la table pour l\'éxécution du programme";
             // 
             // TBX_Reponse
             // 
@@ -213,11 +215,23 @@
             this.DGV_Table.TabIndex = 45453;
             this.DGV_Table.Visible = false;
             // 
+            // label5
+            // 
+            this.label5.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Black;
+            this.label5.Location = new System.Drawing.Point(281, 182);
+            this.label5.Name = "label5";
+            this.label5.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label5.Size = new System.Drawing.Size(213, 59);
+            this.label5.TabIndex = 45454;
+            this.label5.Text = "Ce programme utilise le tableau de la loi normal";
+            // 
             // Supérieur
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(502, 274);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.DGV_Table);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.ERror_A);
@@ -263,5 +277,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView DGV_Table;
+        private System.Windows.Forms.Label label5;
     }
 }
