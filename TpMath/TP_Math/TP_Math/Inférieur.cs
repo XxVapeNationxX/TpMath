@@ -240,5 +240,10 @@ namespace TP_Math
             }
             return Convert.ToDouble(DGV_Table.Rows[resA].Cells[resB].Value);
         }
+
+        private void Inférieur_Load(object sender, EventArgs e)
+        {
+            ImportTable();
+        }
     }
 }

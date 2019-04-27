@@ -209,7 +209,8 @@
             this.DGV_Table.Location = new System.Drawing.Point(34, 153);
             this.DGV_Table.Name = "DGV_Table";
             this.DGV_Table.Size = new System.Drawing.Size(10, 10);
-            this.DGV_Table.TabIndex = 27;
+            this.DGV_Table.TabIndex = 45453;
+            this.DGV_Table.Visible = false;
             // 
             // Inférieur
             // 
@@ -234,6 +235,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Inférieur";
             this.Text = "Inférieur";
+            this.Load += new System.EventHandler(this.Inférieur_Load);
             ((System.ComponentModel.ISupportInitialize)(this.BTN_Return)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DGV_Table)).EndInit();

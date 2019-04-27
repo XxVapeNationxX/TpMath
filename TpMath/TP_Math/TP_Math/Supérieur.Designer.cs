@@ -236,6 +236,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Supérieur";
             this.Text = "Supérieur";
+            this.Load += new System.EventHandler(this.Supérieur_Load);
             ((System.ComponentModel.ISupportInitialize)(this.BTN_Return)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DGV_Table)).EndInit();
